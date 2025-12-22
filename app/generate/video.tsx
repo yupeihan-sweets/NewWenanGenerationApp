@@ -99,7 +99,7 @@ export default function VideoScriptGeneratorScreen() {
             onPress={() => router.push('/result')}
             style={styles.generateButton}
           >
-            <Ionicons name="videocam" size={20} color="#FFFFFF" style={styles.buttonIcon} />
+            <Ionicons name="videocam" size={20} color={AppColors.white} style={styles.buttonIcon} />
             <Text style={styles.buttonText}>生成分镜脚本</Text>
           </Button>
         </View>
@@ -111,7 +111,7 @@ export default function VideoScriptGeneratorScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
   },
   header: {
     flexDirection: 'row',
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 14,
     fontWeight: '500',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   content: {
     flex: 1,
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 12,
     borderWidth: 2,
-    borderColor: '#F3F4F6',
+    borderColor: AppColors.grayBorder,
     borderRadius: 16,
     alignItems: 'center',
     justifyContent: 'center',
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
   durationText: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   durationTextActive: {
     color: AppColors.secondary,
@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
     minWidth: '30%',
     paddingVertical: 10,
     borderWidth: 2,
-    borderColor: '#F3F4F6',
+    borderColor: AppColors.grayBorder,
     borderRadius: 16,
     alignItems: 'center',
     justifyContent: 'center',
@@ -221,7 +221,7 @@ const styles = StyleSheet.create({
   styleText: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   styleTextActive: {
     color: AppColors.secondary,
@@ -229,9 +229,9 @@ const styles = StyleSheet.create({
   footer: {
     paddingHorizontal: 24,
     paddingVertical: 24,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     borderTopWidth: 1,
-    borderTopColor: '#F3F4F6',
+    borderTopColor: AppColors.grayBorder,
   },
   generateButton: {
     height: 56,
@@ -240,7 +240,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   buttonText: {
-    color: '#FFFFFF',
+    color: AppColors.white,
     fontSize: 16,
     fontWeight: '700',
   },

@@ -104,7 +104,7 @@ export default function FavoriteDetailScreen() {
               onPress={handleCopy}
               style={styles.actionButton}
             >
-              <Ionicons name="copy-outline" size={18} color="#FFFFFF" style={styles.buttonIcon} />
+              <Ionicons name="copy-outline" size={18} color={AppColors.white} style={styles.buttonIcon} />
               <Text style={styles.buttonText}>复制</Text>
             </Button>
             <Button
@@ -120,7 +120,7 @@ export default function FavoriteDetailScreen() {
           {/* Delete Button */}
           <View style={styles.deleteContainer}>
             <Pressable style={styles.deleteButton} onPress={handleDelete}>
-              <Ionicons name="heart-dislike-outline" size={16} color="#F87171" />
+              <Ionicons name="heart-dislike-outline" size={16} color={AppColors.error} />
               <Text style={styles.deleteText}>取消收藏</Text>
             </Pressable>
           </View>
@@ -133,7 +133,7 @@ export default function FavoriteDetailScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
   },
   header: {
     flexDirection: 'row',
@@ -142,13 +142,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingTop: 24,
     paddingBottom: 16,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
   },
   headerButton: {
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
   contentDate: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   actionsContainer: {
     flexDirection: 'row',
@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   buttonText: {
-    color: '#FFFFFF',
+    color: AppColors.white,
     fontSize: 14,
     fontWeight: '700',
   },
@@ -219,7 +219,7 @@ const styles = StyleSheet.create({
   deleteText: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#F87171',
+    color: AppColors.error,
   },
   errorContainer: {
     flex: 1,
@@ -240,7 +240,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   backButtonText: {
-    color: '#FFFFFF',
+    color: AppColors.white,
     fontSize: 14,
     fontWeight: '700',
   },

@@ -11,7 +11,7 @@ const Input = React.forwardRef<TextInput, InputProps>(({ style, ...props }, ref)
     <TextInput
       ref={ref}
       style={[styles.input, style]}
-      placeholderTextColor="#D1D5DB"
+      placeholderTextColor={AppColors.grayLighter}
       {...props}
     />
   );
@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
     height: 48,
     width: '100%',
     borderWidth: 2,
-    borderColor: '#F3F4F6',
-    backgroundColor: '#F9FAFB',
+    borderColor: AppColors.grayBorder,
+    backgroundColor: AppColors.grayLight,
     paddingHorizontal: 16,
     paddingVertical: 12,
     fontSize: 14,

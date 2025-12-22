@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 16,
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   form: {
     width: '100%',

@@ -41,7 +41,7 @@ export default function MomentsGeneratorScreen() {
               multiline
               numberOfLines={6}
               placeholder="例如：今天去看了樱花，虽然人很多，但是心情很好..."
-              placeholderTextColor="#D1D5DB"
+              placeholderTextColor={AppColors.grayLighter}
               value={topic}
               onChangeText={setTopic}
             />
@@ -68,7 +68,7 @@ export default function MomentsGeneratorScreen() {
             onPress={() => router.push('/result')}
             style={styles.generateButton}
           >
-            <Ionicons name="sparkles" size={20} color="#FFFFFF" style={styles.buttonIcon} />
+            <Ionicons name="sparkles" size={20} color={AppColors.white} style={styles.buttonIcon} />
             <Text style={styles.buttonText}>立即生成</Text>
           </Button>
         </View>
@@ -80,7 +80,7 @@ export default function MomentsGeneratorScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
   },
   header: {
     flexDirection: 'row',
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 14,
     fontWeight: '500',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   content: {
     flex: 1,
@@ -146,9 +146,9 @@ const styles = StyleSheet.create({
     width: '100%',
     minHeight: 160,
     padding: 20,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     borderWidth: 2,
-    borderColor: '#F3F4F6',
+    borderColor: AppColors.grayBorder,
     borderRadius: 24,
     fontSize: 14,
     color: AppColors.secondary,
@@ -164,22 +164,22 @@ const styles = StyleSheet.create({
   moodButton: {
     paddingHorizontal: 20,
     paddingVertical: 10,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     borderWidth: 2,
-    borderColor: '#F3F4F6',
+    borderColor: AppColors.grayBorder,
     borderRadius: 16,
   },
   moodText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#6B7280',
+    color: AppColors.grayMedium,
   },
   footer: {
     paddingHorizontal: 24,
     paddingVertical: 24,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     borderTopWidth: 1,
-    borderTopColor: '#F3F4F6',
+    borderTopColor: AppColors.grayBorder,
   },
   generateButton: {
     height: 56,
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   buttonText: {
-    color: '#FFFFFF',
+    color: AppColors.white,
     fontSize: 16,
     fontWeight: '700',
   },

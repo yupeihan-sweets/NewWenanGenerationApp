@@ -107,7 +107,7 @@ export default function TemplateDetailScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
   },
   headerSection: {
     backgroundColor: AppColors.primary,
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
   categoryText: {
     fontSize: 10,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: AppColors.white,
   },
   templateTitle: {
     fontSize: 30,
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
     marginTop: -24,
   },
   contentCard: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     borderTopLeftRadius: 32,
     borderTopRightRadius: 32,
     paddingHorizontal: 32,
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
   sectionText: {
     fontSize: 14,
     fontWeight: '500',
-    color: '#6B7280',
+    color: AppColors.grayMedium,
     lineHeight: 20,
   },
   featuresList: {
@@ -212,10 +212,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 12,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#F3F4F6',
+    borderColor: AppColors.grayBorder,
   },
   featureIcon: {
     width: 20,
@@ -230,14 +230,14 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 14,
     fontWeight: '500',
-    color: '#4B5563',
+    color: AppColors.grayDark,
   },
   useButton: {
     height: 56,
     marginTop: 8,
   },
   buttonText: {
-    color: '#FFFFFF',
+    color: AppColors.white,
     fontSize: 16,
     fontWeight: '700',
   },
@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   backButtonText: {
-    color: '#FFFFFF',
+    color: AppColors.white,
     fontSize: 14,
     fontWeight: '700',
   },

@@ -79,7 +79,7 @@ export default function ResultScreen() {
                 <Ionicons
                   name={isEditing ? 'checkmark' : 'create-outline'}
                   size={16}
-                  color={isEditing ? '#FFFFFF' : '#9CA3AF'}
+                  color={isEditing ? AppColors.white : AppColors.gray}
                 />
               </Pressable>
             </View>
@@ -110,7 +110,7 @@ export default function ResultScreen() {
             </Button>
 
             <Pressable style={styles.regenerateButton} onPress={handleRegenerate}>
-              <Ionicons name="refresh" size={18} color="#9CA3AF" />
+              <Ionicons name="refresh" size={18} color={AppColors.gray} />
               <Text style={styles.regenerateText}>不满意？重新生成</Text>
             </Pressable>
           </View>
@@ -123,7 +123,7 @@ export default function ResultScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
   },
   header: {
     flexDirection: 'row',
@@ -132,13 +132,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingTop: 24,
     paddingBottom: 8,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
   },
   backButton: {
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   resultTabActive: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
   resultTabText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   resultTabTextActive: {
     color: AppColors.secondary,
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
     paddingTop: 24,
   },
   resultCard: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     borderWidth: 2,
     borderColor: AppColors.primary + '33',
     borderRadius: 32,
@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
     width: 32,
     height: 32,
     borderRadius: 16,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
     height: 56,
   },
   buttonText: {
-    color: '#FFFFFF',
+    color: AppColors.white,
     fontSize: 16,
     fontWeight: '700',
   },
@@ -274,7 +274,7 @@ const styles = StyleSheet.create({
   regenerateText: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
 });
 

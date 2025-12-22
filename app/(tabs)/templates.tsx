@@ -29,11 +29,11 @@ export default function TemplatesScreen() {
         <Text style={styles.headerTitle}>灵感库</Text>
 
         <View style={styles.searchContainer}>
-          <Ionicons name="search-outline" size={20} color="#9CA3AF" style={styles.searchIcon} />
+          <Ionicons name="search-outline" size={20} color={AppColors.gray} style={styles.searchIcon} />
           <TextInput
             style={styles.searchInput}
             placeholder="搜搜看？"
-            placeholderTextColor="#9CA3AF"
+            placeholderTextColor={AppColors.gray}
           />
         </View>
 
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingTop: 32,
     paddingBottom: 16,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
   },
   headerTitle: {
     fontSize: 24,
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     borderRadius: 16,
     paddingHorizontal: 16,
     paddingVertical: 14,
@@ -130,8 +130,8 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 20,
     borderWidth: 2,
-    borderColor: '#F3F4F6',
-    backgroundColor: '#FFFFFF',
+    borderColor: AppColors.grayBorder,
+    backgroundColor: AppColors.white,
   },
   tabActive: {
     backgroundColor: AppColors.secondary,
@@ -140,10 +140,10 @@ const styles = StyleSheet.create({
   tabText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   tabTextActive: {
-    color: '#FFFFFF',
+    color: AppColors.white,
   },
   content: {
     flex: 1,
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 2,
-    borderColor: '#F9FAFB',
+    borderColor: AppColors.grayLight,
   },
   templateIcon: {
     fontSize: 32,

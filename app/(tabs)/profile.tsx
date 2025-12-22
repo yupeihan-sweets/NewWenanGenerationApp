@@ -43,7 +43,7 @@ export default function ProfileScreen() {
         <View style={styles.avatarContainer}>
           <Text style={styles.avatarEmoji}>👩‍🎨</Text>
           <View style={styles.avatarBadge}>
-            <Ionicons name="person" size={12} color="#FFFFFF" />
+            <Ionicons name="person" size={12} color={AppColors.white} />
           </View>
         </View>
         <Text style={styles.name}>创作达人</Text>
@@ -101,14 +101,14 @@ export default function ProfileScreen() {
                     {item.value}
                   </Text>
                 )}
-                <Ionicons name="chevron-forward" size={16} color="#D1D5DB" />
+                <Ionicons name="chevron-forward" size={16} color={AppColors.grayLighter} />
               </View>
             </Pressable>
           ))}
         </View>
 
         <Pressable style={styles.logoutButton} onPress={handleLogout}>
-          <Ionicons name="log-out-outline" size={16} color="#F87171" style={styles.logoutIcon} />
+          <Ionicons name="log-out-outline" size={16} color={AppColors.error} style={styles.logoutIcon} />
           <Text style={styles.logoutText}>退出登录</Text>
         </Pressable>
 
@@ -130,9 +130,9 @@ const styles = StyleSheet.create({
     width: 96,
     height: 96,
     borderRadius: 48,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     borderWidth: 4,
-    borderColor: '#FFFFFF',
+    borderColor: AppColors.white,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 16,
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     backgroundColor: AppColors.secondary,
     borderWidth: 4,
-    borderColor: '#FFFFFF',
+    borderColor: AppColors.white,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
   id: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   content: {
     paddingHorizontal: 24,
@@ -198,19 +198,19 @@ const styles = StyleSheet.create({
   statLabel: {
     fontSize: 10,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
     textTransform: 'uppercase',
     letterSpacing: 0.5,
   },
   statDivider: {
     width: 1,
     height: 40,
-    backgroundColor: '#F3F4F6',
+    backgroundColor: AppColors.grayBorder,
   },
   menuContainer: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     borderWidth: 2,
-    borderColor: '#F9FAFB',
+    borderColor: AppColors.grayLight,
     borderRadius: 32,
     padding: 8,
     marginBottom: 24,
@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
   menuValue: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#D1D5DB',
+    color: AppColors.grayLighter,
   },
   menuValuePro: {
     color: AppColors.primary,
@@ -269,7 +269,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#FEF2F2',
+    backgroundColor: AppColors.errorBackground,
     borderRadius: 16,
     marginBottom: 32,
   },
@@ -279,13 +279,13 @@ const styles = StyleSheet.create({
   logoutText: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#F87171',
+    color: AppColors.error,
   },
   version: {
     textAlign: 'center',
     fontSize: 10,
     fontWeight: '700',
-    color: '#D1D5DB',
+    color: AppColors.grayLighter,
   },
 });
 

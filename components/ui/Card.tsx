@@ -25,9 +25,9 @@ Card.displayName = 'Card';
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     borderWidth: 2,
-    borderColor: '#F9FAFB',
+    borderColor: AppColors.grayLight,
     borderRadius: 24,
     shadowColor: '#000',
     shadowOffset: {

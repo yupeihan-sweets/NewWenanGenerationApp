@@ -10,8 +10,8 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 const quickActions = [
   { title: '朋友圈', desc: '分享每一刻', icon: 'camera-outline', path: '/generate/moments', color: AppColors.primary + '33', iconColor: AppColors.secondary },
   { title: '小红书', desc: '种草笔记', icon: 'create-outline', path: '/generate/xiaohongshu', color: AppColors.primary + '66', iconColor: AppColors.secondary },
-  { title: '短视频', desc: '创意脚本', icon: 'videocam-outline', path: '/generate/video', color: AppColors.secondary, iconColor: '#FFFFFF' },
-  { title: '全部', desc: '更多场景', icon: 'sparkles', path: '/(tabs)/scenarios', color: '#F3F4F6', iconColor: '#6B7280' },
+  { title: '短视频', desc: '创意脚本', icon: 'videocam-outline', path: '/generate/video', color: AppColors.secondary, iconColor: AppColors.white },
+  { title: '全部', desc: '更多场景', icon: 'sparkles', path: '/(tabs)/scenarios', color: AppColors.grayBorder, iconColor: AppColors.grayMedium },
 ];
 
 export default function HomeScreen() {
@@ -39,7 +39,7 @@ export default function HomeScreen() {
           style={styles.searchBar}
           onPress={() => router.push('/templates')}
         >
-          <Ionicons name="search-outline" size={20} color="#9CA3AF" />
+          <Ionicons name="search-outline" size={20} color={AppColors.gray} />
           <Text style={styles.searchText}>搜索你需要的灵感...</Text>
         </Pressable>
 
@@ -83,7 +83,7 @@ export default function HomeScreen() {
             <Pressable onPress={() => router.push('/records')}>
               <View style={styles.viewAllButton}>
                 <Text style={styles.viewAllText}>查看全部</Text>
-                <Ionicons name="chevron-forward" size={14} color="#9CA3AF" />
+                <Ionicons name="chevron-forward" size={14} color={AppColors.gray} />
               </View>
             </Pressable>
           </View>
@@ -106,7 +106,7 @@ export default function HomeScreen() {
                   <Text style={styles.recentCardTime}>{recordsData[0].date}</Text>
                 </View>
                 <View style={styles.recentCardArrow}>
-                  <Ionicons name="chevron-forward" size={14} color="#9CA3AF" />
+                  <Ionicons name="chevron-forward" size={14} color={AppColors.gray} />
                 </View>
               </View>
             </Card>
@@ -119,7 +119,7 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     paddingHorizontal: 24,
     paddingTop: 32,
     paddingBottom: 24,
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
   headerSubtitle: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
     marginBottom: 4,
   },
   headerTitle: {
@@ -149,13 +149,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 2,
-    borderColor: '#FFFFFF',
+    borderColor: AppColors.white,
   },
   avatarEmoji: {
     fontSize: 20,
   },
   searchBar: {
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     borderRadius: 16,
     padding: 16,
     flexDirection: 'row',
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
   searchText: {
     fontSize: 14,
     fontWeight: '500',
-    color: '#9CA3AF',
+    color: AppColors.gray,
     flex: 1,
   },
   section: {
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
   viewAllText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   quickActionsGrid: {
     flexDirection: 'row',
@@ -215,7 +215,7 @@ const styles = StyleSheet.create({
   quickActionLabel: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#4B5563',
+    color: AppColors.grayDark,
   },
   banner: {
     width: '100%',
@@ -242,12 +242,12 @@ const styles = StyleSheet.create({
   bannerBadgeText: {
     fontSize: 10,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: AppColors.white,
   },
   bannerTitle: {
     fontSize: 20,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: AppColors.white,
     marginBottom: 4,
   },
   bannerSubtitle: {
@@ -284,14 +284,14 @@ const styles = StyleSheet.create({
   },
   recentCardTime: {
     fontSize: 12,
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   recentCardArrow: {
     width: 32,
     height: 32,
     borderRadius: 16,
     borderWidth: 2,
-    borderColor: '#F3F4F6',
+    borderColor: AppColors.grayBorder,
     alignItems: 'center',
     justifyContent: 'center',
   },

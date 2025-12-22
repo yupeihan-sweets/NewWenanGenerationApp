@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
   favoriteDate: {
     fontSize: 10,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
 });
 

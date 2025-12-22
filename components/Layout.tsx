@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { AppColors } from '@/constants/theme';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -26,11 +27,11 @@ const Layout: React.FC<LayoutProps> = ({ children, showNav = true }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F3F4F6',
+    backgroundColor: AppColors.grayBorder,
   },
   wrapper: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     maxWidth: '100%',
     width: '100%',
   },
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
   },
   contentWithNav: {
     paddingBottom: 80, // 为底部导航留出空间

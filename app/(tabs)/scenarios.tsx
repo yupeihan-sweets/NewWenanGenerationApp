@@ -69,7 +69,7 @@ export default function ScenariosScreen() {
                   <Text style={styles.scenarioDesc}>{item.desc}</Text>
                 </View>
                 <View style={styles.scenarioArrow}>
-                  <Ionicons name="chevron-forward" size={20} color="#D1D5DB" />
+                  <Ionicons name="chevron-forward" size={20} color={AppColors.grayLighter} />
                 </View>
               </Pressable>
             );
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
     marginBottom: 32,
   },
   list: {
@@ -106,9 +106,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: AppColors.white,
     borderWidth: 2,
-    borderColor: '#F9FAFB',
+    borderColor: AppColors.grayLight,
     borderRadius: 24,
     marginBottom: 16,
     shadowColor: '#000',
@@ -141,13 +141,13 @@ const styles = StyleSheet.create({
   scenarioDesc: {
     fontSize: 12,
     fontWeight: '500',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   scenarioArrow: {
     width: 32,
     height: 32,
     borderRadius: 16,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     alignItems: 'center',
     justifyContent: 'center',
   },

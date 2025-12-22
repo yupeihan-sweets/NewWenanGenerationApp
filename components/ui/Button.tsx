@@ -56,7 +56,7 @@ const Button = React.forwardRef<any, ButtonProps>(
         fontWeight: '700',
       },
       ghost: {
-        color: '#6B7280',
+        color: AppColors.grayMedium,
         fontWeight: '700',
       },
     };

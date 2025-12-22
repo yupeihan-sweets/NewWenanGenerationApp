@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: AppColors.grayLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     backgroundColor: AppColors.primary,
     borderWidth: 4,
-    borderColor: '#FFFFFF',
+    borderColor: AppColors.white,
     zIndex: 1,
   },
   timelineLine: {
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     top: 16,
     width: 2,
     height: '100%',
-    backgroundColor: '#F3F4F6',
+    backgroundColor: AppColors.grayBorder,
   },
   recordContent: {
     flex: 1,
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
   recordDate: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#9CA3AF',
+    color: AppColors.gray,
   },
   recordType: {
     paddingHorizontal: 8,
@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
   },
   recordText: {
     fontSize: 14,
-    color: '#6B7280',
+    color: AppColors.grayMedium,
     lineHeight: 20,
   },
 });

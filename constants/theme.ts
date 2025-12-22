@@ -29,6 +29,7 @@ export const Colors = {
 
 // 新增：从 Web 应用迁移的主题颜色
 export const AppColors = {
+  // 主色调
   primary: '#F1B1DF', // 柔和粉色
   primaryDark: '#E090C8',
   primaryForeground: '#1E0517', // 深紫色文字
@@ -38,10 +39,27 @@ export const AppColors = {
   mutedForeground: '#8B5E83',
   accent: '#FFF0F5',
   accentForeground: '#1E0517',
-  border: '#E5E7EB',
-  input: '#F3F4F6',
+  
+  // 基础颜色
+  white: '#FFFFFF',
   background: '#FFFFFF',
   foreground: '#1E0517',
+  
+  // 灰色系
+  gray: '#9CA3AF', // 常用灰色文字
+  grayLight: '#F9FAFB', // 浅灰背景
+  grayLighter: '#D1D5DB', // 更浅灰色（图标、占位符）
+  grayMedium: '#6B7280', // 中等灰色文字
+  grayDark: '#4B5563', // 深灰色文字
+  grayBorder: '#F3F4F6', // 边框/背景色
+  
+  // 边框和输入框
+  border: '#E5E7EB',
+  input: '#F3F4F6',
+  
+  // 状态颜色
+  error: '#F87171', // 错误/删除色
+  errorBackground: '#FEF2F2', // 错误背景色
 };
 
 export const Fonts = Platform.select({
